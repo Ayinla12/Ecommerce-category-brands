@@ -1,0 +1,57 @@
+# Test Cases for Ecommerce Category and Brands
+
+## Test Case 1: Verify Category Navigation
+**Test Case ID**: TC_Category_01  
+**Test Scenario**: Verify the functionality of category navigation on the homepage.
+
+### Preconditions:
+- User must be on the homepage of the AutomationExercise website.
+- All required dependencies (Selenium, TestNG) are set up.
+
+### Test Steps:
+1. Launch the browser and navigate to the URL: `http://automationexercise.com`.
+2. Wait for the page to load and verify the page title is `Automation Exercise`.
+3. Verify that the categories are visible on the left sidebar (for example, Women, Men, etc.).
+4. Click on the "Women" category.
+5. Click on a sub-category link under the "Women" category (e.g., Dresses).
+6. Verify that the page loads and the correct category page is displayed.
+7. Check if the text "WOMEN - TOPS PRODUCTS" is visible on the category page.
+8. On the left sidebar, click on a sub-category link under the "Men" category (e.g., Tshirts).
+9. Verify that the user is navigated to the "Men's Tshirts" category page.
+
+### Expected Results:
+- The homepage loads successfully.
+- Categories are visible in the left sidebar.
+- After clicking on a category (e.g., "Women"), the user is redirected to the correct category page.
+- The text "WOMEN - TOPS PRODUCTS" is visible after navigating to the Women category.
+- The user is successfully redirected to the "Men's Tshirts" category after clicking the "Tshirts" link.
+
+---
+
+## Test Case 2: Verify Brand Navigation
+**Test Case ID**: TC_Brand_01  
+**Test Scenario**: Verify the functionality of brand navigation on the products page.
+
+### Preconditions:
+- User is on the homepage of the AutomationExercise website.
+- All required dependencies (Selenium, TestNG) are set up.
+- Brands are visible in the "Brands" section of the product page.
+
+### Test Steps:
+1. Launch the browser and navigate to the URL: `http://automationexercise.com`.
+2. Wait for the page to load and verify the page title is `Automation Exercise`.
+3. Click on the "Products" button in the header to navigate to the products page.
+4. Wait for the "Brands" section to be visible.
+5. Click on any brand name (e.g., Polo).
+6. Verify that the user is redirected to the brand page (for example, `https://automationexercise.com/brand_products/Polo`).
+7. Verify that the products for that brand (e.g., Polo) are displayed correctly.
+8. On the left sidebar, click on another brand name (e.g., H&M).
+9. Verify that the user is redirected to the H&M brand page (e.g., `https://automationexercise.com/brand_products/H&M`).
+10. Verify that the products for the second brand (e.g., H&M) are displayed correctly.
+
+### Expected Results:
+- The "Products" page loads successfully.
+- Brands are visible in the "Brands" section.
+- Clicking on a brand redirects the user to the correct brand page.
+- Products for the selected brand are visible on the page.
+- Clicking on a different brand also redirects the user to the correct brand page and displays the respective brand products.
